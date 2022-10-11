@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    /* Primary */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    
+    /* Neutral */
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background-color: var(--dark-blue);
+
+    font-family: "Manrope", sans-serif;
+}
+
+.card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1rem;
+    padding: 4rem 2rem 7rem 2rem;
+    width: 80%;
+
+    background-color: var(--dark-grayish-blue);
+
+    text-align: center;
+}
+
+.advice-container {
+    overflow: hidden;
+
+    max-height: 0rem;
+    transition: max-height 1s ease-in;
+}
+
+/* For JavaScript use */
+.show {
+    max-height: 31rem;
+}
+
+/* For JavaScript use */
+.hide {
+    max-height: 0;
+    transition: max-height 1s ease-out;
+}
+
+.advice-number {
+    margin-bottom: 2.5rem;
+
+    font-size: 1.3rem;
+    letter-spacing: .4rem;
+    color: var(--neon-green);
+}
+
+.advice-text {
+    margin-bottom: 2.5rem;
+
+    font-size: 2.3rem;
+    color: var(--light-cyan);
+}
+
+.advice-text::before {
+    content: "“";
+}
+
+.advice-text::after {
+    content: "”";
+}
+
+.img-divider {
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    bottom: -3rem;
+
+    border: none;
+    border-radius: 4rem;
+    padding: 2rem;
+
+    background-color: var(--neon-green);
+
+    transition: .2s;
+}
+
+.button:hover {
+    transition: .2s;
+
+    box-shadow: 0rem 0rem 2rem .75rem hsla(150, 100%, 66%, .4);
+
+    cursor: pointer;
+}
+
+.button img {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 31rem) {
+    .card {
+        width: 41rem;
+        padding: 5rem 5rem 6rem 5rem; 
+    }
+
+    .advice-text {
+        margin-bottom:  3.5rem;
+
+        font-size: 2.5rem;
+    }
+
+    .button {
+        padding: 1.8rem;
+    }
+}

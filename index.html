@@ -14,20 +14,22 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="advice-container">
-            <h1 class="advice-number"></h1>
-            <p class="advice-text"></p>
+    <main>
+        <div class="card">
+            <div class="advice-container">
+                <h1 class="advice-number"></h1>
+                <p class="advice-text"></p>
+            </div>
+            <picture>
+                <source media="(max-width: 400px)" srcset="./images/pattern-divider-mobile.svg">
+                <source media="(min-width: 400px)" srcset="./images/pattern-divider-desktop.svg">
+                <img class="img-divider" src="./images/pattern-divider-desktop.svg" alt="Die">
+            </picture>
+            <button class="button">
+                <img class="icon-die" src="./images/icon-dice.svg" alt="Die icon">
+            </button>
         </div>
-        <picture>
-            <source media="(max-width: 400px)" srcset="./images/pattern-divider-mobile.svg">
-            <source media="(min-width: 400px)" srcset="./images/pattern-divider-desktop.svg">
-            <img class="img-divider" src="./images/pattern-divider-desktop.svg" alt="Die">
-        </picture>
-        <button class="button">
-            <img class="icon-die" src="./images/icon-dice.svg" alt="Die icon">
-        </button>
-    </div>
+    </main>
 </body>
 
 </html>

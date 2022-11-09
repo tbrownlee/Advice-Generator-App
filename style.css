@@ -35,6 +35,11 @@ body {
     font-family: "Manrope", sans-serif;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .card {
     position: relative;
 
